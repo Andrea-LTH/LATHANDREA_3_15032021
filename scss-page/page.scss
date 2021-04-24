@@ -21,7 +21,10 @@ body
     margin:0;
 }
 .loader-container
-{
+{   display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:$background-principal;
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -49,6 +52,20 @@ body
         transform:scale(0);
     }
 }
+.loader-tittle1 p
+{
+    padding-top:9px;
+    margin-right:10px;
+    font-family: "Roboto";
+    font-size: 1.4em;    
+}
+.loader-tittle2 p
+{
+    border-bottom: 4px solid $couleur-tertiaire;
+    margin-left: 10px;
+    font-family: "Roboto";
+    font-size: 1.4em;    
+}
 .loader
 {   border-left: 15px solid $couleur-secondaire;
     border-right: 15px solid $couleur-secondaire;
@@ -57,7 +74,7 @@ body
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    background-color: $background-principal;
+    background-color: $background-principal; 
     -webkit-animation: spin 3s linear  ;
     -o-animation: spin 3s linear ;
     animation: spin 3s linear ;
