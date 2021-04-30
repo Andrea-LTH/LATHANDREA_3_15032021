@@ -143,9 +143,8 @@ body {
           align-items: center;
 }
 
-.top-logo img {
-  height: 40px;
-  padding: 3px;
+.top-logo h1 {
+  font-family: "Shrickhand";
 }
 
 .localisation {

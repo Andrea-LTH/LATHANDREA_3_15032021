@@ -110,6 +110,10 @@ body
         color:black;       
     }
     }
+    h1
+    {
+        font-family:"Shrickhand";
+    }
 }
 
 .menu-page-img
@@ -436,20 +440,11 @@ article
     .logo
     {
         justify-content: space-between;     
-        padding: 5px;
-        .top-logo
+        h1
         {
-            height: 30px;
+            margin-right: 50px;
         }
-        .arrow
-        {
-            margin:0;
-            padding:0;
-        }
-        img
-        {
-            margin-right: 60px;
-        }
+            
     }
     article .title-page
     {

@@ -152,6 +152,10 @@ body {
   color: black;
 }
 
+.logo h1 {
+  font-family: "Shrickhand";
+}
+
 .menu-page-img {
   position: relative;
   margin-bottom: -40px;
@@ -538,17 +542,9 @@ article h3 :focus {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 5px;
   }
-  .logo .top-logo {
-    height: 30px;
-  }
-  .logo .arrow {
-    margin: 0;
-    padding: 0;
-  }
-  .logo img {
-    margin-right: 60px;
+  .logo h1 {
+    margin-right: 50px;
   }
   article .title-page {
     display: -webkit-box;

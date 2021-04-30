@@ -59,14 +59,16 @@ body
     padding-top:9px;
     margin-right:10px;
     font-family: "Roboto";
-    font-size: 1.4em;    
+    font-size: 1.4em;
+
 }
 .loader-tittle2 p
 {
     border-bottom: 4px solid $couleur-tertiaire;
     margin-left: 10px;
     font-family: "Roboto";
-    font-size: 1.4em;    
+    font-size: 1.4em;  
+
 }
 .loader
 {   border-left: 15px solid $couleur-secondaire;
@@ -103,10 +105,9 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    img
+    h1
     {
-        height: 40px;
-        padding: 3px;
+        font-family:"Shrickhand";
     }
 }
 .localisation
