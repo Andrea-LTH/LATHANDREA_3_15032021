@@ -165,10 +165,10 @@ $background-principal:#faf6f6;
     padding:10px;
     margin: 15px 0px;
     width:20%;
-    transition: transform 1s;
+    transition: transform 1000ms;
     &:hover ,&:active
     {
-        transform: 1s;
+        transition: transform 1000ms;
         background:linear-gradient(#fc94de,#c39af5);
         box-shadow: 0px 15px 15px #e0dfdf;
     }
@@ -314,14 +314,14 @@ $background-principal:#faf6f6;
         .heart
         {
             position: absolute;    
-            border-radius: 50x;
+            border-radius: 50px;
             opacity: 1;
             font-size: 25px; 
         }
         .heart-menu
         {         
             position: relative;
-            border-radius: 50x;
+            border-radius: 50px;
             opacity: 0;
             background:-webkit-linear-gradient(#FF79DA,#9356DC);
             -webkit-background-clip:text;
