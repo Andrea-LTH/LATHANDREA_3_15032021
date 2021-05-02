@@ -17,10 +17,7 @@ $couleur-primaire: #9356DC ;
 $couleur-secondaire:#FF79DA;
 $couleur-tertiaire:#99E2D0;
 $background-principal:#faf6f6;
-body
-{
-    margin:0;
-}
+
 .loader-container
 {
     display: flex;
@@ -299,10 +296,11 @@ body
     .love
     {   
         border:none;
+        position: absolute;
+        right: 8%;
+        bottom: 18px;
         border-radius: 50px;
-        margin:0;
         background-color: white;
-        padding-bottom: 5px;
         cursor: pointer;
         &:hover .heart, &:active .heart
         {
@@ -315,12 +313,10 @@ body
         }
         .heart
         {
-            position: absolute;
+            position: absolute;    
             border-radius: 50x;
             opacity: 1;
-            font-size: 25px;
-            padding-right: 15px;
-            margin-top: -10px;     
+            font-size: 25px; 
         }
         .heart-menu
         {         
@@ -331,8 +327,6 @@ body
             -webkit-background-clip:text;
             -webkit-text-fill-color:transparent;    
             font-size: 25px;
-            padding-right: 15px;
-            margin-top: -30px;
         }        
     }
 }
@@ -364,19 +358,16 @@ body
     border:none;
     justify-content: center;
     align-items: center;
-    p
-    {
-        font-family: "Roboto";
-        font-size: 1.5em;
-        font-weight: bold;
-        position:absolute;
-        right:20px;
-        top:5px;
-        padding: 10px;
-        background-color: $couleur-tertiaire;
-        color:#289c81;       
-        border-radius: 5px;       
-    }
+    font-family: "Roboto";        
+    font-size: 1.5em;
+    font-weight: bold;
+    position:absolute;
+    right:20px;
+    top:10px;
+    padding: 8px;
+    background-color: $couleur-tertiaire;
+    color:#289c81;       
+    border-radius: 5px;       
 }
 /*--------------------------------------FOOTER-----------------------------------------*/
 footer

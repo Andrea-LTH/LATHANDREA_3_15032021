@@ -12,10 +12,6 @@
   font-style: normal;
 }
 
-body {
-  margin: 0;
-}
-
 .loader-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -375,10 +371,11 @@ body {
 
 .descriptions .love {
   border: none;
+  position: absolute;
+  right: 8%;
+  bottom: 18px;
   border-radius: 50px;
-  margin: 0;
   background-color: white;
-  padding-bottom: 5px;
   cursor: pointer;
 }
 
@@ -397,8 +394,6 @@ body {
   border-radius: 50x;
   opacity: 1;
   font-size: 25px;
-  padding-right: 15px;
-  margin-top: -10px;
 }
 
 .descriptions .love .heart-menu {
@@ -409,8 +404,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 25px;
-  padding-right: 15px;
-  margin-top: -30px;
 }
 
 @-webkit-keyframes heart-appear {
@@ -457,16 +450,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.new p {
   font-family: "Roboto";
   font-size: 1.5em;
   font-weight: bold;
   position: absolute;
   right: 20px;
-  top: 5px;
-  padding: 10px;
+  top: 10px;
+  padding: 8px;
   background-color: #99E2D0;
   color: #289c81;
   border-radius: 5px;

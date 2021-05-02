@@ -12,10 +12,6 @@
   font-style: normal;
 }
 
-body {
-  margin: 0;
-}
-
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
