@@ -143,37 +143,25 @@ article h3 :focus {
   width: 10%;
 }
 
-@-webkit-keyframes menu-appear {
-  0% {
-    margin-top: 40px;
-    opacity: 0;
+@-webkit-keyframes fadein {
+  from {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
   }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-    margin-top: 0;
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
-@keyframes menu-appear {
-  0% {
-    margin-top: 40px;
-    opacity: 0;
+@keyframes fadein {
+  from {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
   }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-    margin-top: 0;
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -194,8 +182,8 @@ article h3 :focus {
   padding: 5px 10px;
   margin-bottom: 15px;
   margin-left: -30px;
-  -webkit-animation: menu-appear 2s forwards;
-          animation: menu-appear 2s forwards;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
@@ -277,8 +265,8 @@ article h3 :focus {
 }
 
 .nav-page li:hover .check, .nav-page li a:active .check {
-  -webkit-transition: 0.2s linear all;
-  transition: 0.2s linear all;
+  -webkit-transition: all 500ms linear;
+  transition: all 500ms linear;
   right: 0;
 }
 
