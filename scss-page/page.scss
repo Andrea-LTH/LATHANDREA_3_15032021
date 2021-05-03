@@ -140,13 +140,19 @@ article
 @keyframes fadein 
 {
     from {
-      transform: scale(.1);
+      transform: scaleY(0);
 
     }
   
     to {
-      transform: scale(1);
+      transform: scaleY(1);
     }
+    0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
   }
 .nav-page
 {   
@@ -167,11 +173,11 @@ article
         padding:5px 10px;
         margin-bottom: 15px;
         margin-left: -30px;
-        animation:fadein 2s ; 
-        transition: transform 1s;
+        animation:fadein 3s ; 
+        transition: transform 3s;
         &:hover, &:active
          {
-        transform: 1s;
+        transform: 3s;
         box-shadow: 15px 15px 15px #c5c4c4;
         } 
             .p1
@@ -246,6 +252,52 @@ article
     {
         transform:rotate(360deg);
         transition: transform 0.5s ease-in-out;
+    }
+    li:not(:hover) .check, li a:active .check
+        {
+            animation: slide-right 500ms linear;
+        }
+    
+    li:not(:hover) .p1, li:hover .p2 ,li a:active .p1 ,li a:active .p2
+    {
+        animation: recover-size 200ms linear;
+    }
+    li:not(:hover) i , li a:active i
+    {
+        animation: rotate 500ms linear;
+    }
+}
+@keyframes slide-right
+{
+    0%
+    {
+        right: 0;
+    }
+    100%
+    {
+        right: -20%;
+    }
+}
+@keyframes recover-size
+{
+    0%
+    {
+        width:80%;
+    }
+    100%
+    {
+        width:100%;
+    }
+}
+@keyframes rotate
+{
+    0%
+    {
+       transform:rotate(0);
+    }
+    100%
+    {
+        transform:rotate(-360deg);
     }
 }
 .order

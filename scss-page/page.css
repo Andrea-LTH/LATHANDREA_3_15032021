@@ -145,23 +145,35 @@ article h3 :focus {
 
 @-webkit-keyframes fadein {
   from {
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
 @keyframes fadein {
   from {
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -182,17 +194,17 @@ article h3 :focus {
   padding: 5px 10px;
   margin-bottom: 15px;
   margin-left: -30px;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  -webkit-animation: fadein 3s;
+          animation: fadein 3s;
+  -webkit-transition: -webkit-transform 3s;
+  transition: -webkit-transform 3s;
+  transition: transform 3s;
+  transition: transform 3s, -webkit-transform 3s;
 }
 
 .nav-page li:hover, .nav-page li:active {
-  -webkit-transform: 1s;
-          transform: 1s;
+  -webkit-transform: 3s;
+          transform: 3s;
   -webkit-box-shadow: 15px 15px 15px #c5c4c4;
           box-shadow: 15px 15px 15px #c5c4c4;
 }
@@ -283,6 +295,79 @@ article h3 :focus {
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.nav-page li:not(:hover) .check, .nav-page li a:active .check {
+  -webkit-animation: slide-right 500ms linear;
+          animation: slide-right 500ms linear;
+}
+
+.nav-page li:not(:hover) .p1, .nav-page li:hover .p2, .nav-page li a:active .p1, .nav-page li a:active .p2 {
+  -webkit-animation: recover-size 200ms linear;
+          animation: recover-size 200ms linear;
+}
+
+.nav-page li:not(:hover) i, .nav-page li a:active i {
+  -webkit-animation: rotate 500ms linear;
+          animation: rotate 500ms linear;
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -20%;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -20%;
+  }
+}
+
+@-webkit-keyframes recover-size {
+  0% {
+    width: 80%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes recover-size {
+  0% {
+    width: 80%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
 }
 
 .order {

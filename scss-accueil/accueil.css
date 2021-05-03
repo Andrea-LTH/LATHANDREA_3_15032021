@@ -12,6 +12,10 @@
   font-style: normal;
 }
 
+.bloc-page {
+  max-width: 1500px;
+}
+
 .loader-container {
   display: -webkit-box;
   display: -ms-flexbox;

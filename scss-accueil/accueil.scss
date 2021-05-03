@@ -18,6 +18,10 @@ $couleur-secondaire:#FF79DA;
 $couleur-tertiaire:#99E2D0;
 $background-principal:#faf6f6;
 
+.bloc-page
+{
+    max-width: 1500px;
+}
 .loader-container
 {
     display: flex;
